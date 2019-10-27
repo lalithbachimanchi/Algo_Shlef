@@ -18,7 +18,7 @@ migrate = Migrate(app, db)
 
 class Cluster(db.Model):
     __tablename__='cluster'
-    cluster_id = db.Column(db.Integer, priary_key=True)
+    cluster_id = db.Column(db.Integer, primary_key=True)
     cluster_name = db.Column(db.String(60), nullable=False)
     cloud_region = db.Column(db.String(60), nullable=True)
 
